@@ -1,0 +1,19 @@
+import { Component } from "react";
+class ClassEvent extends Component{
+
+    handleClick()
+    {
+        console.log("class based event")
+    }
+
+    render()
+    {
+        return(
+            <div>
+                This is a class based component
+                <button onClick={this.handleClick}>Click (class event)</button>
+            </div>
+        )
+    }
+}
+export default ClassEvent;
